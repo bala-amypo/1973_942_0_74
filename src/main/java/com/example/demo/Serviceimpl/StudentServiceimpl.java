@@ -5,9 +5,9 @@ package com.example.PracticeProject.serviceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.PracticeProject.entity.StuEnt;
-import com.example.PracticeProject.repository.StudentRepository;
-import com.example.PracticeProject.service.StudentService;
+import com.example.demo.entity.Stuentity;
+import com.example.demo.repository.StudentRepository;
+import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceimpl implements StudentService{
@@ -15,7 +15,7 @@ public class StudentServiceimpl implements StudentService{
     @Autowired
     StudentRepository studentRepository;
 
-    public StuEnt saveStudent(StuEnt student){
-        return studentRepository.save(student);
+    public Stuentity saveStudent(Stuentity stuentity){
+        return studentRepository.save(stuentity);
     }
 }
